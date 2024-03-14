@@ -1,0 +1,21 @@
+Quando eu seleciono a agencia da pampulha o campo data abre sozinho e preencho a data desejada, logo em seguida o campo hora abre sozinho coloco 09:00
+para selecionar a hora desejada, o campo data da entrega abre sozinho seleciono a data de entrega e a hora e colocada automaticamente em 09:00 horas. 
+Acontece sempre que a hora selecionada para retirada não existe na hora de devolução, isso pode atrapalhar os testes de automação, 
+e necessario ficar criando variaveis de condições para nao quebrar o codigo.
+
+OQUE ACONTECE:
+
+Given em local de retira "Agencia Pampulha" esta selecionado
+When quando coloco uma data qualquer 
+And coloco o horario de 09:00
+And preencho a data de devolução
+Then a hora para devolver e selecionada automaticamente 
+
+OQUE E ESPERADO:
+Given em local de retira "Agencia Pampulha" esta selecionado
+When quando coloco uma data qualquer 
+And coloco o horario de 09:00
+And preencho a data de devolução
+Then deve abrir o campo hora para eu escolher a hora da devolução
+
+===================================================================================================================================================
